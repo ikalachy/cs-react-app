@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "rsuite/dist/rsuite.min.css";
 import {
-  Container,
-  Header,
-  Content,
-  Footer,
-  FlexboxGrid,
-  Grid,
-  Row,
-  Col,
   Panel,
   Stack,
   Button,
@@ -18,8 +10,7 @@ import {
   Uploader,
   Divider
 } from "rsuite";
-// ;
-import { VscDebugStart } from "react-icons/vsc";
+
 import CameraRetroIcon from "@rsuite/icons/legacy/CameraRetro";
 import HeroList from "../components/List";
 import { Configuration, OpenAIApi } from "openai";
@@ -29,8 +20,6 @@ const CustomInput = ({ ...props }) => (
     <Input {...props} />
   </InputGroup>
 );
-
-console.log("process.env.OPENAI_API_KEY", process.env.REACT_APP_OPENAI_API_KEY);
 
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY
@@ -63,7 +52,7 @@ export default function DashboardPage() {
         .then((img) => {
           let url = img?.data?.data?.[0]?.url;
           console.log("img");
-          setImages([...images, {url: url, prompt: inputPrompt}]);
+          setImages([...images, { url: url, prompt: inputPrompt }]);
         })
         .finally(() => setIsLoadingImage(false));
     }
