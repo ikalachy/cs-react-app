@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* body{
+      height: 100%;
+      margin: 0;
+    }
+    div.wave{
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      z-index: 99;
+    }
+    
+    .wave svg{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+    
+    #container {
+        position: relative;
+        height: 90vh;
+    } */
