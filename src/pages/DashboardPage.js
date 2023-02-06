@@ -71,7 +71,7 @@ export default function DashboardPage() {
 
       <Stack justifyContent="center" alignItems="center">
         <Steps current={step} vertical="false">
-          <Steps.Item
+          {/* <Steps.Item
             title="Upload image"
             description={
               <Uploader
@@ -85,7 +85,7 @@ export default function DashboardPage() {
                 </button>
               </Uploader>
             }
-          />
+          /> */}
           <Steps.Item
             title="Describe your Image"
             description={
